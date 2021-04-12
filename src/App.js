@@ -20,7 +20,7 @@ import { usePosition } from 'use-position';
 function App() {
     const { latitude: lat, longitude: lon } = usePosition();
     const [scaleType, setScaleType] = useState('cels');
-    const [cityName, setCityName] = useState('Лондон');
+    const [cityName, setCityName] = useState('Омск');
     const [temp, setTemp] = useState(0);
     const [wind, setWind] = useState(0);
     const [direction, setDirection] = useState('');
@@ -148,7 +148,7 @@ function App() {
     };
 
     useEffect(() => {
-        getGlobalWeather();
+        getGlobalWeather()
     }, []);
 
     return (
