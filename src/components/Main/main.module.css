@@ -1,0 +1,56 @@
+.main {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weatherIcon {
+    width: 200px;
+}
+
+@media (max-width: 520px) {
+    .weatherIcon {
+        width: 100px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.degrees {
+    font-size: 180px;
+    line-height: 216px;
+}
+
+@media (max-width: 768px) {
+    .degrees {
+        font-size: 150px;
+    }
+}
+
+.descr {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.descr::first-letter{
+    text-transform: uppercase;
+}
+
+@media (max-width: 520px) {
+    .degrees {
+        font-size: 120px;
+        line-height: 155px;
+        font-weight: 300;
+    }
+
+    .descr {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
