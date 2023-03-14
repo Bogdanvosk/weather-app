@@ -1,5 +1,4 @@
 import React from 'react';
-// import weatherIcon from '../../assets/sun.png';
 
 import styles from './main.module.css';
 
